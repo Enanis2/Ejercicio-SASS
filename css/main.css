@@ -30,15 +30,18 @@ header ul {
 main {
   padding: 0 10% 0 10%; }
 
-#camisetas {
+#camisetas, #merch {
   padding: 0%;
   margin: 0%;
-  width: 20%;
-  height: 20%; }
-  #camisetas button {
+  width: 33%;
+  height: 100%; }
+  #camisetas button, #merch button {
     filter: invert(108%); }
+  #camisetas img, #merch img {
+    height: 100%; }
 
 #carruseles {
   padding-top: 20px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
