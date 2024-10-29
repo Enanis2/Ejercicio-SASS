@@ -5,7 +5,22 @@
 
 @import "menu";
 
+main{
+    padding: 0 10% 0 10%;
+}
+
 #camisetas{
     padding: 0%;
     margin: 0%;
+    width: 20%;
+    height: 20%;
+    button{
+        filter: invert(108%);
+    }
+}
+
+#carruseles{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }
