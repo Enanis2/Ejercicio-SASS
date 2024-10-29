@@ -1,0 +1,32 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+a {
+  text-decoration: none !important;
+  color: black !important; }
+
+header #divImagenYtitulo {
+  width: 100%;
+  display: flex; }
+  header #divImagenYtitulo div {
+    padding-left: 10px;
+    display: flex;
+    align-items: center; }
+
+header img {
+  width: 10%;
+  padding: 20px 0 20px 10px; }
+
+header ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around; }
+  header ul li {
+    font-size: 20px; }
+
+#camisetas {
+  padding: 0%;
+  margin: 0%; }
