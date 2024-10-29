@@ -9,7 +9,7 @@ main{
     padding: 0 10% 0 10%;
 }
 
-#camisetas, #merch{
+#camisetas, #merch, #post{
     padding: 0%;
     margin: 0%;
     width: 33%;
@@ -22,9 +22,25 @@ main{
     }
 }
 
+#post{
+    img{
+        border-radius: 20px;
+    }
+}
+
 #carruseles{
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#mjJug{
+    display: flex !important;
+}
+
+#jugPt1{
+    margin-bottom: 0% !important;
+    padding: 0% !important;
+    width: 50%;
 }

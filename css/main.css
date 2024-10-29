@@ -23,25 +23,36 @@ header ul {
   padding: 0%;
   list-style: none;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
   header ul li {
     font-size: 20px; }
 
 main {
   padding: 0 10% 0 10%; }
 
-#camisetas, #merch {
+#camisetas, #merch, #post {
   padding: 0%;
   margin: 0%;
   width: 33%;
   height: 100%; }
-  #camisetas button, #merch button {
+  #camisetas button, #merch button, #post button {
     filter: invert(108%); }
-  #camisetas img, #merch img {
+  #camisetas img, #merch img, #post img {
     height: 100%; }
+
+#post img {
+  border-radius: 20px; }
 
 #carruseles {
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center; }
+
+#mjJug {
+  display: flex !important; }
+
+#jugPt1 {
+  margin-bottom: 0% !important;
+  padding: 0% !important;
+  width: 50%; }
