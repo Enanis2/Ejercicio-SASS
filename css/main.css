@@ -1,7 +1,3 @@
-* {
-  margin: 0%;
-  padding: 0%; }
-
 a {
   text-decoration: none !important;
   color: black !important; }
@@ -27,25 +23,38 @@ header ul {
   header ul li {
     font-size: 20px; }
 
+* {
+  margin: 0%;
+  padding: 0%; }
+
 main {
   padding: 0 10% 0 10%; }
 
+#carruseles {
+  padding-top: 20px;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'camis post merch';
+  column-gap: 10px; }
+
 #camisetas, #merch, #post {
   padding: 0%;
-  margin: 0%;
-  width: 33%;
-  height: 100%; }
+  margin: 0%; }
   #camisetas img, #merch img, #post img {
     height: 100%; }
 
-#post img {
-  border-radius: 20px; }
+#camisetas {
+  grid-area: camis; }
 
-#carruseles {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+#merch {
+  grid-area: merch; }
+
+#post {
+  grid-area: post; }
+  #post img {
+    border-radius: 20px; }
 
 .poster, .merch {
   height: 500px; }
@@ -59,20 +68,31 @@ main {
 #post button {
   filter: invert(0%); }
 
-#jug {
-  display: flex;
-  flex-direction: row; }
-  #jug ol {
-    width: 50%;
-    margin: 0% !important;
-    padding: 0; }
+#jug ol {
+  margin: 0% !important;
+  padding: 0; }
 
-#jugadores h3 {
-  text-align: center;
-  padding: 5px 0 5px 0; }
+#jugadores {
+  display: grid;
+  width: 100%;
+  height: 200px;
+  grid-template-rows: 1fr 9fr;
+  grid-template-areas: 'jugMasGol' 'lista'; }
+  #jugadores h3 {
+    text-align: center;
+    padding: 5px 0 5px 0;
+    grid-area: jugMasGol; }
+
+#jug {
+  grid-area: lista;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'unoCinco seisDiez'; }
 
 #ol1 {
-  padding-left: 36% !important; }
+  grid-area: unoCinco;
+  padding-left: 55% !important; }
 
 #ol2 {
-  padding-left: 2% !important; }
+  grid-area: seisDiez;
+  padding-left: 10% !important; }
