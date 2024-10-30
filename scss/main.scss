@@ -165,6 +165,7 @@ section{
 
 #camisetasGrid{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(9, 1fr);
 
@@ -191,7 +192,7 @@ section{
 #en2000, #en2005{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 9fr;
 }
 
 #en2000{
@@ -203,6 +204,9 @@ section{
     }
     #2000-1{
         grid-area: camiseta1de2-1;
+    }
+    #2000-2{
+        grid-area: camiseta2de2-1;
     }
 }
 

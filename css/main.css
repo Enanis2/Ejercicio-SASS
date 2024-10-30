@@ -105,6 +105,7 @@ section article h3 {
 
 #camisetasGrid {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(9, 1fr);
   grid-template-areas: 'en2000 en2001 en2002' 'en2003 en2004 en2005' 'en2006 en2007 en2008' 'en2009 en2010 en2011' 'en2012 en2013 en2014' 'en2015 en2016 en2017' 'en2018 en2019 en2020' 'en2021 en2022 en2023' 'en2024 en2024 en2024'; }
@@ -188,12 +189,16 @@ section article h3 {
 #en2000, #en2005 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
+  grid-template-rows: 1fr 9fr; }
 
 #en2000 {
   grid-template-areas: 'añoDe2-1 añoDe2-1' 'camiseta1de2-1 camiseta2de2-1'; }
   #en2000 h3 {
     grid-area: añoDe2-1; }
+  #en2000 #2000-1 {
+    grid-area: camiseta1de2-1; }
+  #en2000 #2000-2 {
+    grid-area: camiseta2de2-1; }
 
 #en2005 {
   grid-template-areas: 'añoDe2-2 añoDe2-2' 'camiseta1de2-2 camiseta2de2-2'; }
