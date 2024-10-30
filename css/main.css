@@ -35,8 +35,6 @@ main {
   margin: 0%;
   width: 33%;
   height: 100%; }
-  #camisetas button, #merch button, #post button {
-    filter: invert(108%); }
   #camisetas img, #merch img, #post img {
     height: 100%; }
 
@@ -49,10 +47,32 @@ main {
   justify-content: space-around;
   align-items: center; }
 
-#mjJug {
-  display: flex !important; }
+.poster, .merch {
+  height: 500px; }
 
-#jugPt1 {
-  margin-bottom: 0% !important;
-  padding: 0% !important;
-  width: 50%; }
+#camisetas div div {
+  height: 500px; }
+
+#camisetas button, #merch button {
+  filter: invert(108%); }
+
+#post button {
+  filter: invert(0%); }
+
+#jug {
+  display: flex;
+  flex-direction: row; }
+  #jug ol {
+    width: 50%;
+    margin: 0% !important;
+    padding: 0; }
+
+#jugadores h3 {
+  text-align: center;
+  padding: 5px 0 5px 0; }
+
+#ol1 {
+  padding-left: 36% !important; }
+
+#ol2 {
+  padding-left: 2% !important; }

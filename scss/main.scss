@@ -3,6 +3,15 @@
     padding: 0%;
 }
 
+$tamaños:(
+    poster: 500px,
+);
+
+$colores:(
+    flechas1: invert(108%),
+    flechas2: invert(0%),
+);
+
 @import "menu";
 
 main{
@@ -14,9 +23,6 @@ main{
     margin: 0%;
     width: 33%;
     height: 100%;
-    button{
-        filter: invert(108%);
-    }
     img{
         height: 100%;
     }
@@ -35,12 +41,52 @@ main{
     align-items: center;
 }
 
-#mjJug{
-    display: flex !important;
+
+.poster, .merch{
+    height: map-get($tamaños, poster);
 }
 
-#jugPt1{
-    margin-bottom: 0% !important;
-    padding: 0% !important;
-    width: 50%;
+#camisetas{
+    div{
+        div{
+            height: map-get($tamaños, poster);
+        }
+    }
+}
+
+#camisetas, #merch{
+    button{
+        filter: map-get($colores, flechas1);
+    }
+}
+
+#post{
+    button{
+        filter: map-get($colores, flechas2);
+    }
+}
+
+#jug{
+    display: flex;
+    flex-direction: row;
+    ol{
+        width: 50%;
+        margin: 0% !important;
+        padding: 0;
+    }
+}
+
+#jugadores{
+    h3{
+        text-align: center;
+        padding: 5px 0 5px 0;
+    }
+}
+
+#ol1{
+    padding-left: 36% !important;
+}
+
+#ol2{
+    padding-left: 2% !important;
 }
