@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none !important;
   color: black !important; }
@@ -56,11 +57,8 @@ main {
   #post img {
     border-radius: 20px; }
 
-.poster, .merch {
-  height: 500px; }
-
-#camisetas div div {
-  height: 500px; }
+.poster, #camisetas div div, .merch {
+  height: 300px; }
 
 #camisetas button, #merch button {
   filter: invert(108%); }
@@ -105,8 +103,226 @@ main {
 section article h3 {
   text-align: center; }
 
-#camisetas {
+#camisetasGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(9, 1fr);
-  grid-template-areas: '2000-01 2001-02 2002-03' '2003-04 2004-05 2005-06' '2006-07 2007-08 2008-09' '2009-10 2010-11 2011-12' '2012-13 2013-14 2014-15' '2015-16 2016-17 2017-18' '2018-19 2019-20 2020-21' '2021-22 2022-23 2023-24' '2024-25 2024-25 2024-25'; }
+  grid-template-areas: 'en2000 en2001 en2002' 'en2003 en2004 en2005' 'en2006 en2007 en2008' 'en2009 en2010 en2011' 'en2012 en2013 en2014' 'en2015 en2016 en2017' 'en2018 en2019 en2020' 'en2021 en2022 en2023' 'en2024 en2024 en2024'; }
+
+#en2000 {
+  grid-area: en2000; }
+
+#en2001 {
+  grid-area: en2001; }
+
+#en2002 {
+  grid-area: en2002; }
+
+#en2003 {
+  grid-area: en2003; }
+
+#en2004 {
+  grid-area: en2004; }
+
+#en2005 {
+  grid-area: en2005; }
+
+#en2006 {
+  grid-area: en2006; }
+
+#en2007 {
+  grid-area: en2007; }
+
+#en2008 {
+  grid-area: en2008; }
+
+#en2009 {
+  grid-area: en2009; }
+
+#en2010 {
+  grid-area: en2010; }
+
+#en2011 {
+  grid-area: en2011; }
+
+#en2012 {
+  grid-area: en2012; }
+
+#en2013 {
+  grid-area: en2013; }
+
+#en2014 {
+  grid-area: en2014; }
+
+#en2015 {
+  grid-area: en2015; }
+
+#en2016 {
+  grid-area: en2016; }
+
+#en2017 {
+  grid-area: en2017; }
+
+#en2018 {
+  grid-area: en2018; }
+
+#en2019 {
+  grid-area: en2019; }
+
+#en2020 {
+  grid-area: en2020; }
+
+#en2021 {
+  grid-area: en2021; }
+
+#en2022 {
+  grid-area: en2022; }
+
+#en2023 {
+  grid-area: en2023; }
+
+#en2024 {
+  grid-area: en2024; }
+
+/*2 CAMISETAS*/
+#en2000, #en2005 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+#en2000 {
+  grid-template-areas: 'añoDe2-1 añoDe2-1' 'camiseta1de2-1 camiseta2de2-1'; }
+  #en2000 h3 {
+    grid-area: añoDe2-1; }
+
+#en2005 {
+  grid-template-areas: 'añoDe2-2 añoDe2-2' 'camiseta1de2-2 camiseta2de2-2'; }
+  #en2005 h3 {
+    grid-area: añoDe2-2; }
+
+/*1 CAMISETA*/
+#en2024 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-areas: 'añoDe1' 'camisetaDe1'; }
+  #en2024 h3 {
+    grid-area: añoDe1; }
+  #en2024 #2024-1 {
+    grid-area: camisetaDe1; }
+
+/*3 CAMISETAS*/
+#en2001, #en2002, #en2003, #en2004, #en2006, #en2007, #en2008, #en2009, #en2010, #en2011, #en2012, #en2013, #en2014, #en2015, #en2016, #en2017, #en2018, #en2019, #en2020, #en2021, #en2022, #en2023 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr); }
+
+#en2001 {
+  grid-template-areas: 'añoDe3-1 añoDe3-1 añoDe3-1' 'camiseta1de3-1 camiseta2de3-1 camiseta3de3-1'; }
+  #en2001 h3 {
+    grid-area: añoDe3-1; }
+
+#en2002 {
+  grid-template-areas: 'añoDe3-2 añoDe3-2 añoDe3-2' 'camiseta1de3-2 camiseta2de3-2 camiseta3de3-2'; }
+  #en2002 h3 {
+    grid-area: añoDe3-2; }
+
+#en2003 {
+  grid-template-areas: 'añoDe3-3 añoDe3-3 añoDe3-3' 'camiseta1de3-3 camiseta2de3-3 camiseta3de3-3'; }
+  #en2003 h3 {
+    grid-area: añoDe3-3; }
+
+#en2004 {
+  grid-template-areas: 'añoDe3-4 añoDe3-4 añoDe3-4' 'camiseta1de3-4 camiseta2de3-4 camiseta3de3-4'; }
+  #en2004 h3 {
+    grid-area: añoDe3-4; }
+
+#en2006 {
+  grid-template-areas: 'añoDe3-5 añoDe3-5 añoDe3-5' 'camiseta1de3-5 camiseta2de3-5 camiseta3de3-5'; }
+  #en2006 h3 {
+    grid-area: añoDe3-5; }
+
+#en2007 {
+  grid-template-areas: 'añoDe3-6 añoDe3-6 añoDe3-6' 'camiseta1de3-6 camiseta2de3-6 camiseta3de3-6'; }
+  #en2007 h3 {
+    grid-area: añoDe3-6; }
+
+#en2008 {
+  grid-template-areas: 'añoDe3-7 añoDe3-7 añoDe3-7' 'camiseta1de3-7 camiseta2de3-7 camiseta3v3-7'; }
+  #en2008 h3 {
+    grid-area: añoDe3-7; }
+
+#en2009 {
+  grid-template-areas: 'añoDe3-8 añoDe3-8 añoDe3-8' 'camiseta1de3-8 camiseta2de3-8 camiseta3de3-8'; }
+  #en2009 h3 {
+    grid-area: añoDe3-8; }
+
+#en2010 {
+  grid-template-areas: 'añoDe3-9 añoDe3-9 añoDe3-9' 'camiseta1de3-9 camiseta2de3-9 camiseta3de3-9'; }
+  #en2010 h3 {
+    grid-area: añoDe3-9; }
+
+#en2011 {
+  grid-template-areas: 'añoDe3-10 añoDe3-10 añoDe3-10' 'camiseta1de3-10 camiseta2de3-10 camiseta3de3-10'; }
+  #en2011 h3 {
+    grid-area: añoDe3-10; }
+
+#en2012 {
+  grid-template-areas: 'añoDe3-11 añoDe3-11 añoDe3-11' 'camiseta1de3-11 camiseta2de3-11 camiseta3de3-11'; }
+  #en2012 h3 {
+    grid-area: añoDe3-11; }
+
+#en2013 {
+  grid-template-areas: 'añoDe3-12 añoDe3-12 añoDe3-12' 'camiseta1de3-12 camiseta2de3-12 camiseta3de3-12'; }
+  #en2013 h3 {
+    grid-area: añoDe3-12; }
+
+#en2014 {
+  grid-template-areas: 'añoDe3-13 añoDe3-13 añoDe3-13' 'camiseta1de3-13 camiseta2de3-13 camiseta3de3-13'; }
+  #en2014 h3 {
+    grid-area: añoDe3-13; }
+
+#en2015 {
+  grid-template-areas: 'añoDe3-14 añoDe3-14 añoDe3-14' 'camiseta1de3-14 camiseta2de3-14 camiseta3de3-14'; }
+  #en2015 h3 {
+    grid-area: añoDe3-14; }
+
+#en2016 {
+  grid-template-areas: 'añoDe3-15 añoDe3-15 añoDe3-15' 'camiseta1de3-15 camiseta2de3-15 camiseta3de3-15'; }
+  #en2016 h3 {
+    grid-area: añoDe3-15; }
+
+#en2017 {
+  grid-template-areas: 'añoDe3-16 añoDe3-16 añoDe3-16' 'camiseta1de3-16 camiseta2de3-16 camiseta3de3-16'; }
+  #en2017 h3 {
+    grid-area: añoDe3-16; }
+
+#en2018 {
+  grid-template-areas: 'añoDe3-17 añoDe3-17 añoDe3-17' 'camiseta1de3-17 camiseta2de3-17 camiseta3de3-17'; }
+  #en2018 h3 {
+    grid-area: añoDe3-17; }
+
+#en2019 {
+  grid-template-areas: 'añoDe3-18 añoDe3-18 añoDe3-18' 'camiseta1de3-18 camiseta2de3-18 camiseta3de3-18'; }
+  #en2019 h3 {
+    grid-area: añoDe3-18; }
+
+#en2020 {
+  grid-template-areas: 'añoDe3-19 añoDe3-19 añoDe3-19' 'camiseta1de3-19 camiseta2de3-19 camiseta3de3-19'; }
+  #en2020 h3 {
+    grid-area: añoDe3-19; }
+
+#en2021 {
+  grid-template-areas: 'añoDe3-20 añoDe3-20 añoDe3-20' 'camiseta1de3-20 camiseta2de3-20 camiseta3de3-20'; }
+  #en2021 h3 {
+    grid-area: añoDe3-20; }
+
+#en2022 {
+  grid-template-areas: 'añoDe3-21 añoDe3-21 añoDe3-21' 'camiseta1de3-21 camiseta2de3-21 camiseta3de3-21'; }
+  #en2022 h3 {
+    grid-area: añoDe3-21; }
+
+#en2023 {
+  grid-template-areas: 'añoDe3-22 añoDe3-22 añoDe3-22' 'camiseta1de3-22 camiseta2de3-22 camiseta3de3-22'; }
+  #en2023 h3 {
+    grid-area: añoDe3-22; }
