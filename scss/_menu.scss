@@ -13,6 +13,12 @@ header{
             display: flex;
             align-items: center;
         }
+        img{
+            transition: all 2s;
+            &:hover{
+                filter: brightness(250%);
+            }
+        }
     }
     img{
         width: 10%;
@@ -26,7 +32,12 @@ header{
         justify-content: space-evenly;
 
         li{
+            width: 25%;
+            text-align: center;
             font-size: 30px;
+            &:hover{
+                background-image: radial-gradient(at 50% 60%, white, #b9a58a 50%);
+            }
         }
     }
 }

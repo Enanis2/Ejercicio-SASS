@@ -1,7 +1,13 @@
 @import "menu";
+@import "footer";
 *{
     margin: 0%;
     padding: 0%;
+}
+
+*{
+    font-family: "myFont";
+    src: url(../assets/fuente/Itim.zip);
 }
 
 $tamaños:(
@@ -41,34 +47,34 @@ $posiciones:(
     2021: en2021,
     2022: en2022,
     2023: en2023,
-    );
+);
 
     
-    main{
-        padding: 0 10% 0 10%;
-        background-color: map-get($colores, body);
-    }
+main{
+    padding: 0 10% 20px 10%;
+    background-color: map-get($colores, body);
+}
     
     
-    #carruseles{
-        padding-top: 20px;
-        display: grid;
-        justify-content: space-around;
-        align-items: center;
+#carruseles{
+    padding-top: 20px;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
         
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
         
-        grid-template-areas: 
-        'camis post merch';
+    grid-template-areas: 
+    'camis post merch';
         
-        column-gap: 10px;
-    }
+    column-gap: 10px;
+}
 
-    #camisetas, #merch, #post{
-        padding: 0%;
-        margin: 0%;
-        img{
-            height: 100%;
+#camisetas, #merch, #post{
+    padding: 0%;
+    margin: 0%;
+    img{
+        height: 100%;
     }
 }
 
@@ -162,6 +168,13 @@ $posiciones:(
 #tituloCamisetas{
     text-align: center;
     padding: 10px 0 10px 0;
+}
+
+article{
+    transition: all 1s;
+    &:hover{
+        filter: brightness(250%);
+    }
 }
 
 section{
@@ -515,6 +528,15 @@ header{
 #transicion, #transicion2{
     height: 10px;
     background-image: linear-gradient(#b9a58a, rgb( 0, 0, 0), #f7e0c3);
+}
+
+#transicion3, #transicion4{
+    height: 10px;
+    background-image: linear-gradient(#f7e0c3, rgb( 0, 0, 0), #b9a58a);
+}
+
+footer{
+    background-color: map-get($colores, header );
 }
 
 $coloresAñosCamisetas:(
